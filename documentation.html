@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Wiki-Parenting API Documentation
+    </title>
+  </head>
+  
+  <body>
+    <div>
+      <h1>Endpoints</h1>
+      <table>
+        <tr>
+          <th>Business Logic</th>
+          <th>URL</th>
+          <th>HTTP Method</th>
+          <th>Request Body Data Format</th>
+          <th>Response</th>
+        </tr>
+        <tr>
+          <td>Return a list of all users</td>
+          <td>/users</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return a list of all books</td>
+          <td>/books</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return a list of all podcasts</td>
+          <td>/podcasts</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>   
+          <td>Return a list of all tweets</td>
+          <td>tweets</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return a list of all topics</td>
+          <td>topics</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return a list of all Apps</td>
+          <td>/apps</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return a list of all Content Creators</td>
+          <td>/creators</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return a list of all books by topic</td>
+          <td>/books/:topic/:topicName</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return a list off all podcasts by topic</td>
+          <td>podcasts/:topic/:topicName</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return a list of all tweets by hashtag</td>
+          <td>/tweets/:hashtag</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return topic by book</td>
+          <td>/books/:title</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return topic by podcast</td>
+          <td>/podcasts/:title</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return Topics to Follow by username</td>
+          <td>users/:username</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return book by title</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Return Content Creator data by name</td>
+          <td>/creators/:name</td>
+          <td>GET</td>
+          <td>NONE</td>
+          <td>JSON OBJECT</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Allow new users to register</td>
+          <td>users</td>
+          <td>POST</td>
+          <td>JSON OBJECT</td>
+          <td>JSON OBJECT</td>
+        </tr>
+        <tr>
+          <td>Allow users to login</td>
+          <td>/login</td>
+          <td>PUT</td>
+          <td>NONE</td>
+          <td>NONE</td>
+        </tr>
+        <tr>
+          <td>Allow users to update their user info</td>
+          <td>/users/:username/td>
+          <td>PUT</td>
+          <td>JSON OBJECT</td>
+          <td>JSON OBJECT</td>
+        <tr>
+        </tr>
+          <td>Allow users to add topics to their follow list</td>
+          <td>/users/:topicName</td>
+          <td>PUT</td>
+          <td>NONE</td>
+          <td>MESSAGE</td>
+        </tr>
+        <tr>
+          <td>Allow users to remove topics from their follow list</td>
+          <td>/users/:topicName</td>
+          <td>DELETE</td>
+          <td>NONE</td>
+          <td>MESSAGE</td>
+        </tr>
+        <tr>
+          <td>Allow existing users to deregister</td>
+          <td>/users/:username</td>
+          <td>DELETE</td>
+          <td>NONE</td>
+          <td>MESSAGE</td>
+        </tr>
+      </table>
+    </div>  
+  </body>
+</html>

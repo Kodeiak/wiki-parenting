@@ -1,0 +1,23 @@
+{
+  "name": "wiki-parenting",
+  "version": "1.0.0",
+  "description": "Provide users a centralized resource where users can find books, podcasts, and other resources related to various parenting topics.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kodeiak/wiki-parenting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kodeiak/wiki-parenting/issues"
+  },
+  "homepage": "https://github.com/Kodeiak/wiki-parenting#readme",
+  "devDependencies": {
+    "eslint": "^8.14.0"
+  }
+}
