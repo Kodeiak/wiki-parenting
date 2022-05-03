@@ -40,14 +40,14 @@
         </tr>
         <tr>   
           <td>Return a list of all tweets</td>
-          <td>tweets</td>
+          <td>/tweets</td>
           <td>GET</td>
           <td>NONE</td>
           <td>JSON OBJECT</td>
         </tr>
         <tr>
           <td>Return a list of all topics</td>
-          <td>topics</td>
+          <td>/topics</td>
           <td>GET</td>
           <td>NONE</td>
           <td>JSON OBJECT</td>
@@ -75,7 +75,7 @@
         </tr>
         <tr>
           <td>Return a list off all podcasts by topic</td>
-          <td>podcasts/:topic/:topicName</td>
+          <td>/podcasts/:topic/:topicName</td>
           <td>GET</td>
           <td>NONE</td>
           <td>JSON OBJECT</td>
@@ -89,7 +89,7 @@
         </tr>
         <tr>
           <td>Return topic by book</td>
-          <td>/books/:title</td>
+          <td>/books/topics/:title</td>
           <td>GET</td>
           <td>NONE</td>
           <td>JSON OBJECT</td>
@@ -103,13 +103,14 @@
         </tr>
         <tr>
           <td>Return Topics to Follow by username</td>
-          <td>users/:username</td>
+          <td>/users/topics/:username</td>
           <td>GET</td>
           <td>NONE</td>
           <td>JSON OBJECT</td>
         </tr>
         <tr>
           <td>Return book by title</td>
+          <td>/books/:title</td>
           <td>GET</td>
           <td>NONE</td>
           <td>JSON OBJECT</td>
@@ -120,11 +121,10 @@
           <td>GET</td>
           <td>NONE</td>
           <td>JSON OBJECT</td>
-          <td>JSON OBJECT</td>
         </tr>
         <tr>
           <td>Allow new users to register</td>
-          <td>users</td>
+          <td>/users</td>
           <td>POST</td>
           <td>JSON OBJECT</td>
           <td>JSON OBJECT</td>
@@ -138,21 +138,21 @@
         </tr>
         <tr>
           <td>Allow users to update their user info</td>
-          <td>/users/:username/td>
+          <td>/users/:username</td>
           <td>PUT</td>
           <td>JSON OBJECT</td>
           <td>JSON OBJECT</td>
         <tr>
         </tr>
           <td>Allow users to add topics to their follow list</td>
-          <td>/users/:topicName</td>
+          <td>/users/:username/:topic</td>
           <td>PUT</td>
           <td>NONE</td>
           <td>MESSAGE</td>
         </tr>
         <tr>
           <td>Allow users to remove topics from their follow list</td>
-          <td>/users/:topicName</td>
+          <td>/users/:username/:topic</td>
           <td>DELETE</td>
           <td>NONE</td>
           <td>MESSAGE</td>
